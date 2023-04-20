@@ -1,0 +1,234 @@
+/* Importando ua font Pooppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+  /* _______________________________________________ */
+  /* Reset (Básico) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+  html {
+    /* Variaveis em CSS */
+
+    --corPrimaria: #017143;
+
+    --corSecundaria: #333;
+
+    --corTerciaria: #fff;
+  }
+
+  /* Main */
+
+  main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; /*Altura de 1 tela (view height)*/
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--corTerciaria); /*Chamada da variavel*/
+  }
+
+  /* ____________________________________________________________ */
+  /* Header */
+
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header.logo {
+    position: relative;
+    max-width: 80px;
+  }
+
+  header.logo:hover {
+    filter: invert(0.1); /*Controla o nível de contraste*/
+  }
+
+  header ul {
+    position: relative;
+    display: flex; /*Põe os links em linha (Menu)*/
+    list-style: none;
+  }
+
+  header ul li a {
+    display: inline-block; /*Garante que o link fique sempre em linha */
+    color: var(--corSecundaria);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 40px;
+    list-style: none;
+
+  }
+
+  header ul li a:hover {
+    background-color: var(--corPrimaria);
+    color: var(--corTerciaria);
+    border-radius: 30px;
+  }
+
+  /* _________________________________________________________________ */
+  /* Conteúdo */
+
+  .conteudo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .conteudo .textoPrincipal {
+    position: relative;
+    max-width: 600px; /*Largura area do texto*/
+  
+  }
+
+  .conteudo .textoPrincipal h2 {
+  color: var(--corSecundaria);
+  font-size: 2.5em; /* 1em = 1 x tamanho fonte elemento (16px)*/
+  line-height: 1.5em; /*Espaçamento vertical*/
+  font-weight: 400; 
+  }
+
+  span {
+    color: var(--corPrimaria);
+    font-size: 1.2em; /* 1em = 1 x tamanho fonte elemento (16px)*/
+    font-weight: 900; 
+    }
+
+    .conteudo .textoPrincipal p {
+      color: var(--corSecundaria);
+    }
+
+    /* Botão */
+    .conteudo .TextoPrincipal a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 8px 20px;
+      background: var(--corPrimaria);
+      color: var(--corTerciaria);
+      border-radius: 40px;
+      font-weight: 600;
+      letter-spacing: 1px; /*Espaço entre os caracteres*/
+      text-decoration: none;
+    }
+
+    .conteudo .TextoPrincipal a:hover {
+      background: var(--corSecundaria);
+      color: var(--corTerciaria);
+    }
+
+    .conteudo .imgBox {
+      width: 600px;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 50px;
+      margin-top: 50px;
+    }
+
+    .conteudo .imgBox img {
+      max-width: 340px;
+    }
+
+    /*sorvetes pequenos*/
+
+    .sorvetes {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translate(-50%); /*Compensa o ajuste centralizando*/
+      display: flex;
+    }
+
+    .sorvetes li {
+      list-style: none;
+      display: inline-block;
+      margin: 0 20px;
+      cursor: pointer; /*Transforma o cursor em uma mão*/
+      transition: 0.5s; /*Tempo de tansição*/
+    }
+
+    .sorvetes li :hover {
+      transition: translatey (-15px); /*Movimenta 15 no eixo Y*/
+    }
+
+    .sorvetes li img {
+      max-width: 60px;
+    }
+
+    /*Imagens dasbredes sociais*/
+
+    .sociais {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translate(-50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .sociais li {
+      list-style: none;
+    }
+
+    .sociais li a {
+      display: inline-block;
+      margin: 5px 0;
+      transform: scale(0.6); /*Reduz o tamahno dos ícones*/
+      filter: invert(1); /*Inverte a cor para branco*/
+    }
+
+    .sociais li a:hover{
+      /* color: #333; */
+      color: var(--corSecundaria);
+     filter: invert(0);
+    }
+
+    /*________________________________________________*/
+    /*Cículo*/
+
+    .circulo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      /* background: #017143; */
+      background: var(--corPrimaria);
+
+      /*https://bennettfeely.com/clippy/ */
+      /*https://www.w3school.com/cssref/css3_pr_clip-path.php */
+
+      /* Tmanho -> Lado -> Posição */
+      clip-path: circle(600px at right 800px);
+    }
+    /*_____________________________________________________*/
+    /* Responsividade */
+
+    /* https://www.w3schools.com/howto_css_media_query_breakpoints.asp */
+
+    /* Small devices (portrait tables and large phones, 600px and up )*/
+    /* Medium devices (landscape tablets, 768px and up)*/
+    /* Large devices (Laptops/desktops, 992px and up)*/
+    /* Extra large devices (large laptops and desktops, 1200px and up)*/
+
+    /*Abaixo de 992px*/
+
+
+
