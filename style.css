@@ -222,3 +222,69 @@ html {
     clip-path: circle(600px at right 800px);
 
   }
+
+  /* Responsividade */
+
+  /* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/* Abaixo de 992px */
+
+@media (max-width: 992px) {
+header {
+  padding: 20px;
+}
+header .logo {
+  max-width: 60px; /*diminui o tamanho da imagem da logo*/
+}
+header ul {
+    display: none; /*Esconda o menu em telas abaixo 992*/
+}
+}
+/* Menu hamburger*/
+.toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url(assets/menu.png); /* Imagem hamburger*/
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(1);
+  z-index: 11;
+}
+.toggle-active {
+  position: fixed;
+  right: 20px;
+  background: url(assets/close.png); /* Imagem x (Fechar) hamburger */
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header ul.links.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Largura da lista do hamburger (quando ativo)*/
+  height: 45%; /* altura da lista do hamburger (quando ativo)*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  z-index: 10;
+}
+header ul li a {
+  font-size: 1.5em;
+  margin: 5px 0;
+}
+
+/* Neste ponto fazer 1° função no JS */

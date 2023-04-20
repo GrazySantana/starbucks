@@ -7,9 +7,9 @@
     <title>Starbucks (Landing page)</title>
 
     <!-- Link para Favicon -->
-    <link rel="shortcut icon" href="assets/starbucks-favicon.png" type="image/x-ico">
+    <link rel="shortcut icon" href="assets/starbucks-favicon.png" type="image/x-icon">
 
-    <!-- Link para p css -->
+    <!-- Link para o Css -->
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -17,19 +17,18 @@
 
     <!-- Container com toda a página -->
     <main>
-
-        <!-- Div para o circulo colorido -->
+        <!-- Div para o círculo colorido -->
         <div class="circulo"></div>
 
+        <!-- Header -->
         <header>
             <!-- Logo -->
-            <a href="#"><img src="assets/logo.png" alt="Logo" class="Logo"></a>
+            <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
 
-            <!-- Div para menu Hamburger (Em telas maiores) -->
+            <!-- Div para menu hamburguer (Em telas menores) -->
             <div class="toggle"></div>
 
             <!-- Menu (Links) -->
-
             <ul class="links">
                 <li><a href="https://www.starbucks.com.br/" target="_blank">Home</a></li>
                 <li><a href="https://www.starbucks.com.br/menu-list" target="_blank">Menu</a></li>
@@ -39,46 +38,52 @@
 
         </header>
 
-        <!-- ____________________________________________________________________________ -->
-        <!-- Contúdo -->
+        <!-- ___________________________________________ -->
+        <!-- Conteudo -->
 
         <div class="conteudo">
 
-            <div class="TextoPrincipal">
+            <div class="textoPrincipal">
 
-                <h2>Não é apenas um café é: <br> <span> Starbucks! </span> </h2>
-                <p> Descubra um mundo de sabores inesquecíveis com a Starbucks.</p>
-                    <p>cada colherada é uma explosão de sabores irresistíveis</p> 
-                    <p>vão te conquisar! </p>
-            
+                <!-- Texto principal -->
+                <h2>Não é apenas um café é:<br> <span>Starbucks</span></h2>
 
-                    <!-- Botão -->
-                    <a href="https://www.starbucks.com.br/" target="_blank">Veja mais</a>
+                <!-- Texto secundário -->
+                <p>Descubra um mundo de sabores inesquecíveis com a Starbucks.
+                    Cada colherada é uma explosão de sabores irresistíveis que
+                    vão te conquistar!
+                </p>
 
-                </div>
+                <!-- Botão -->
+                <a href="https://www.starbucks.com.br/" target="_blank">Veja mais</a>
 
-                    <!-- Imagem Sorvete grande a direita -->
-                    <div class="imgBox"><img src="assets/img1.png" alt="sorvete" class="starbacks"></div>
-
+                
             </div>
-                    <ul class="sorvetes">
-                        <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#017143')"></li>
-                        <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#eb7495')"></li>
-                        <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#d752b1')"></li>
-                    </ul>
-                    
-                    <!-- Redes Sociais -->
-                    <ul class="sociais">
-                        <li><a href="https;//pt-br.facebook.com" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li>
-                      <li><a href="https;//pt-br.intagram.com" target="_blank"><img src="assets/instagram.png" alt="instagram"></a></li>
-                      <li><a href="https;//pt-br.twitter.com" target="_blank"><img src="assets/twitter.png" alt="twitter"></a></li>
-                    </ul>
-                        
-                    
+
+            <!-- Imagem Sorvete grande (a direita) -->
+            <div class="imgBox"><img src="assets/img1.png" class="starbucks"/></div>
+
         </div>
 
+        <!-- Imagens dos sorvetes pequenos (abaixo)-->
+        <ul class="sorvetes">
+            <li><img src="assets/thumb1.png"></li>
+            <li><img src="assets/thumb2.png"></li>
+            <li><img src="assets/thumb3.png"></li>
+        </ul>
+
+        <!-- Redes sociais -->
+
+        <ul class="sociais">
+            <li><a href="https://pt-br.facebook.com/" target="_blank"><img src="assets/facebook.png" alt="facebook"></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><img src="assets/twitter.png" alt="twitter"></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><img src="assets/instagram.png" alt="instagram"></a></li>
+        </ul>
+ 
+
+
+
     </main>
-
-
+    
 </body>
 </html>
