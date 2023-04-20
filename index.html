@@ -26,7 +26,7 @@
             <a href="#"><img src="assets/logo.png" alt="logo" class="logo"></a>
 
             <!-- Div para menu hamburguer (Em telas menores) -->
-            <div class="toggle"></div>
+            <div class="toggle" onclick="toggleMenu();"></div>
 
             <!-- Menu (Links) -->
             <ul class="links">
@@ -67,9 +67,10 @@
 
         <!-- Imagens dos sorvetes pequenos (abaixo)-->
         <ul class="sorvetes">
-            <li><img src="assets/thumb1.png"></li>
-            <li><img src="assets/thumb2.png"></li>
-            <li><img src="assets/thumb3.png"></li>
+            <li><img src="assets/thumb1.png" onclick="imgSlider('assets/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="assets/thumb2.png" onclick="imgSlider('assets/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="assets/thumb3.png" onclick="imgSlider('assets/img3.png');changeCircleColor('#d752b1')"></li>
+            
         </ul>
 
         <!-- Redes sociais -->
@@ -81,9 +82,10 @@
         </ul>
  
 
-
-
     </main>
+
+    <!-- Link para JavaScript -->
+    <script src="mudar.js"></script>
     
 </body>
 </html>
